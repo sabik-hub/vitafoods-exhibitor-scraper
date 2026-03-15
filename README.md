@@ -1,8 +1,17 @@
 # Vitafoods Exhibitor Scraper
 
-This project scrapes exhibitor information from the Vitafoods exhibitor directory using Selenium.
+Python web scraper that collects exhibitor information from the Vitafoods event directory.
 
-## Data Collected
+## Features
+
+- Automatic pagination handling
+- Selenium automation
+- HTML parsing with BeautifulSoup
+- Data export to Excel
+
+## Extracted Data
+
+The scraper collects:
 
 - Company Name
 - Stand
@@ -11,15 +20,34 @@ This project scrapes exhibitor information from the Vitafoods exhibitor director
 - Description
 - Profile Link
 
-## Technologies
+## Installation
 
-Python
-Selenium
-BeautifulSoup
-Pandas
+Clone the repository
 
-## Run Project
+```
+git clone https://github.com/sabik-hub/vitafoods-exhibitor-scraper.git
+```
 
+Install dependencies
+
+```
 pip install -r requirements.txt
+```
 
+Run the scraper
+
+```
 python scraper.py
+```
+
+## Output
+
+The scraper generates:
+
+```
+vitafoods_exhibitors.xlsx
+```
+
+## Screenshot
+
+!(screenshots/scraper_result.png)
